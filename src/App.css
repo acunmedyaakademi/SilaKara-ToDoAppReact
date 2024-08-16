@@ -1,0 +1,275 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.light {
+  background-color: #FAFAFA;
+  .container {
+    background-color: #FAFAFA;
+  }
+}
+
+.dark {
+  background-color: #171823;
+  .container{
+    background-color: #171823;
+  }
+  .header{
+    background-image: url('/src/img/mobileBackgDark.png');
+  }
+  .ToDoContent{
+    box-shadow: 0px 35px 50px -15px #00000080;
+  }
+  .statusButtons {
+    box-shadow: 0px 35px 50px -15px #00000080;
+    background-color: #25273D;
+  }
+  .ToDoInput {
+    color: #C8CBE7;
+  }
+  .ToDoList {
+    color: #C8CBE7;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.container {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #FAFAFA;
+  min-height: 730px;
+}
+
+h1 {
+  width: 134px;
+  letter-spacing: 6.1;
+  color: #FFFFFF;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+.header {
+  background-image: url(/src/img/mobileBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 48px 24px 24px 16px;
+  z-index: -1;
+}
+
+.ToDoInput {
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 10px 35px;
+  text-align: left;
+  background-position-y: center;
+  background-position-x: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  box-shadow: 0px 35px 50px -15px #C2C3D680;
+  width: 325px;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.headerP {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+button {
+  border: unset;
+  background: unset;
+  color: #9495A5;
+}
+
+.liP {
+  display: flex;
+  align-items: center;
+}
+
+.liP button {
+  margin-right: 15px;
+}
+
+.ToDoContent {
+  margin: 0 auto;
+  padding: 16px 24px;
+  box-shadow: 0px 35px 50px -15px #C2C3D680;
+  width: 327px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.ToDoContentBottom {
+  display: flex;
+  gap: 130px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  text-align: right;
+  color: #9495A5;
+  margin-bottom: 20px;
+}
+
+li {
+  display: flex;
+  gap: 33px;
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: -0.1666666716337204px;
+  text-align: left;
+  color: #494C6B;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statusButtons {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  padding: 15px 80px;
+  box-shadow: 0px 35px 50px -15px #C2C3D680;
+  background-color: #FFFFFF;
+  width: 327px;
+  border-radius: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: -0.1944444477558136px;
+  text-align: left;
+}
+
+.footer {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.1944444477558136px;
+  text-align: center;
+  color: #9495A5;
+}
+
+@media(width >= 1110px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  .header {
+    background-image: url(/src/img/desktopBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headerP {
+    width: 541px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .ToDoInput {
+    width: 541px;
+    margin: 0 auto;
+    padding: 18px 40px;
+  }
+
+  .ToDoContent {
+    width: 541px;
+  }
+
+  .ToDoContentBottom {
+    display: flex;
+    gap: 344px;
+  }
+
+  .statusButtons {
+    width: 541px;
+  }
+
+  .light {
+    background-color: #FAFAFA;
+    .container {
+      background-color: #FAFAFA;
+    }
+  }
+  
+  .dark {
+    background-color: #171823;
+    .container{
+      background-color: #171823;
+    }
+    .header{
+      background-image: url('/src/img/desktopBackgDark.jpg');
+    }
+    .ToDoContent{
+      box-shadow: 0px 35px 50px -15px #00000080;
+    }
+    .statusButtons{
+      box-shadow: 0px 35px 50px -15px #00000080;
+    }
+    .ToDoInput{
+      box-shadow: 0px 35px 50px -15px #00000080;
+      background-color: #25273D;
+      border: 2px solid #25273D;
+    }
+  }
+
+}
